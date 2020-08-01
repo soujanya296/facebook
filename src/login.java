@@ -8,6 +8,7 @@ public class login {
 		System.setProperty("webdriver.gecko.driver", "./Softwares/geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.facebook.com/");	
+				driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 
 }
